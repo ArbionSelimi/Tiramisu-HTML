@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./OrderCompleted.html">
+      <h2>Tiramisu Order!</h2>
+      <table>
+        <tr>
+          <th>Please complete the required fields to proceed:</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><label for="firstandlastname">First and Last Name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="firstandlastname"
+              name="firstandlastname"
+              placeholder="Filan Fisteku"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Rr.UCK - nr.12 - Prishtine,"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="filanfisteku@gmail.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="tel">Mobile Number:</label></td>
+          <td>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="+383 44 123 456"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Extra ingredients:</label></td>
+          <td>
+            <input
+              type="checkbox"
+              id="ingredients-cream"
+              name="ingredients"
+              value="Cream"
+            />
+            <label for="ingredients-cream">Cream</label>
+
+            <input
+              type="checkbox"
+              id="ingredients-mascarpone"
+              name="ingredients"
+              value="Mascarpone"
+            />
+            <label for="ingredients-mascarpone">Mascarpone</label>
+            <input
+              type="checkbox"
+              id="ingredients-chocolate"
+              name="ingredients"
+              value="Chocolate"
+            />
+            <label for="ingredients-chocolate">Chocolate</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Size:</label></td>
+          <td>
+            <input
+              type="radio"
+              id="size-small"
+              name="size"
+              value="small"
+              required
+            />
+            <label for="size-small">Small</label>
+
+            <input
+              type="radio"
+              id="size-medium"
+              name="size"
+              value="medium"
+              required
+            />
+            <label for="size-medium">Medium</label>
+            <input
+              type="radio"
+              id="size-large"
+              name="size"
+              value="large"
+              required
+            />
+            <label for="size-large">Large</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="number">Quantity:</label></td>
+          <td>
+            <input
+              type="number"
+              id="Quantity"
+              name="quantity"
+              value="1"
+              min="1"
+              max="6"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: end">
+            <input type="submit" value="Make the Order!" />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
