@@ -4,14 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tiramisu Order</title>
+    <style>
+      h2 {
+        background-color: rgba(43, 127, 237, 0.303);
+        display: flexbox;
+        border: 2px solid black;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .table-container {
+        width: "100%";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        font-size: 20px;
+      }
+
+      .btn {
+        font-size: 12px;
+        font-weight: bold;
+        border: 2px solid black;
+        color: black;
+        padding: 5px;
+        margin: 30px;
+      }
+      .btn-submit {
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid black;
+        color: black;
+        margin-top: 20px;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: hotpink;
+      }
+      a:active {
+        color: blue;
+      }
+    </style>
   </head>
   <body style="background-color: rgb(222, 221, 221)">
     <form action="./OrderCompleted.html">
       <h2>Tiramisu Order!</h2>
-      <table>
+      <table class="table-container">
         <tr>
-          <th>Please complete the required fields to proceed:</th>
+          <th style="border-bottom: 2px solid black">
+            Please complete the required fields to proceed:
+          </th>
           <th></th>
         </tr>
         <tr>
@@ -22,6 +69,7 @@
               id="firstandlastname"
               name="firstandlastname"
               placeholder="Filan Fisteku"
+              size="50px"
               required
             />
           </td>
@@ -34,6 +82,7 @@
               id="address"
               name="address"
               placeholder="Rr.UCK - nr.12 - Prishtine,"
+              size="50px"
               required
             />
           </td>
@@ -46,6 +95,7 @@
               id="email"
               name="email"
               placeholder="filanfisteku@gmail.com"
+              size="50px"
               required
             />
           </td>
@@ -58,6 +108,7 @@
               id="tel"
               name="tel"
               placeholder="+383 44 123 456"
+              size="50px"
               required
             />
           </td>
@@ -136,12 +187,13 @@
         </tr>
         <tr>
           <td colspan="2" style="text-align: end">
-            <input type="submit" value="Make the Order!" />
+            <input class="btn-submit" type="submit" value="Make the Order!" />
           </td>
         </tr>
       </table>
       <br />
       <br />
+      <button class="btn"><a href="./index.html">BACK TO HOME</a></button>
     </form>
   </body>
 </html>

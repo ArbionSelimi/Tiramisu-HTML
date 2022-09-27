@@ -5,49 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to make Tiramisu</title>
+    <style>
+      h2 {
+        background-color: rgba(43, 127, 237, 0.303);
+        display: flexbox;
+        border: 2px solid black;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .table-container {
+        width: "100%";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .paragraph {
+        border-left: 10px solid black;
+        font-size: 30px;
+        padding: 10px 10px 10px 20px;
+        margin: 20px 20px 20px 40px;
+      }
+      .btn {
+        font-size: 12px;
+        font-weight: bold;
+        border: 2px solid black;
+        color: black;
+        padding: 5px;
+        margin: 30px;
+      }
+
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: hotpink;
+      }
+      a:active {
+        color: blue;
+      }
+    </style>
   </head>
   <body style="background-color: rgb(222, 221, 221)">
     <h2>The Making Process of Tiramisu</h2>
-    <p>
+    <p class="paragraph">
       Below you can watch the Video or hear the Audio of making process of
       Tiramisu.
     </p>
     <br />
-    <table border="1">
-      <tr>
-        <th style="background-color: rgb(255, 217, 0)">Video</th>
-        <th style="background-color: rgb(255, 217, 0)">Audio Only</th>
-      </tr>
-      <tr>
-        <td>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TWkDRIOmwoc"
-            title="YouTube video player"
-            frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
-            allowfullscreen
-          ></iframe>
-        </td>
-        <td
-          align="center"
-          width="560"
-          height="315"
-          style="background-color: rgb(243, 163, 4)"
-        >
-          <audio
-            style="border: 10px solid rgb(243, 163, 4); border-radius: 50px"
-            controls
-          >
-            <source src="./assets/Tiramisu.mp3" type="audio/mpeg" />
-          </audio>
-        </td>
-      </tr>
-    </table>
+    <div class="table-container">
+      <table class="table">
+        <tr>
+          <th style="font-size: 30px; font-weight: bolder">Video</th>
+          <th style="font-size: 30px; font-weight: bolder">Audio Only</th>
+        </tr>
+        <tr>
+          <td>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TWkDRIOmwoc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
+              allowfullscreen
+            ></iframe>
+          </td>
+          <td align="center" width="560" height="315">
+            <audio
+              style="border: 10px solid rgb(243, 163, 4); border-radius: 50px"
+              controls
+            >
+              <source src="./assets/Tiramisu.mp3" type="audio/mpeg" />
+            </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
     <br />
-    <br />
-    <br />
-    <a href="./index.html"><b>Back to Home</b></a>
+    <button class="btn"><a href="./index.html">BACK TO HOME</a></button>
   </body>
 </html>
