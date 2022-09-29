@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiramisu Recipe | Sally's Baking Addiction</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+      :root {
+        font-family: Quattrocento, serif;
+      }
+
+      .img1 {
+        box-shadow: -5px 5px 5px 3px rgba(68, 68, 68, 0.855);
+      }
+      .img2 {
+        box-shadow: 0px 5px 5px 3px rgba(68, 68, 68, 0.855);
+      }
+      .img3 {
+        box-shadow: 5px 5px 5px 3px rgba(68, 68, 68, 0.855);
+      }
+
       .last-container {
-        border: 2px solid black;
+        border: 2px solid rgba(0, 0, 0, 0.276);
         padding: 0px 10px 0px 10px;
       }
 
@@ -29,30 +45,45 @@
       }
 
       .ingredients {
-        font-style: italic;
-        font-size: 20px;
-        border: 2px dotted black;
-        padding: 120px;
+        border: 2px solid black;
+        background-position: center center;
+        background-size: cover;
+
+        /* padding: 120px; */
         background-color: rgba(252, 188, 49, 0.308);
+        background-image: url(./img/tiramisu.jpg);
+      }
+
+      .ingredients ul {
+        list-style-type: square;
+        font-size: 20px;
+        font-weight: bolder;
+        color: black;
+        text-shadow: 3px 3px 3px white;
+        font-style: italic;
+      }
+      .inner-ingredients {
+        backdrop-filter: blur(5px);
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
       }
 
       .album {
-        border: 2px dotted black;
         margin: auto;
         padding: 20px;
-        background-color: rgba(252, 188, 49, 0.308);
+        /* background-color: rgba(252, 188, 49, 0.308); */
+        box-shadow: 0px 0px 10px 2px rgba(68, 68, 68, 0.855);
       }
-      a:link {
-        color: red;
+      a:link,
+      a:hover {
+        color: blue;
       }
       a:visited {
-        color: green;
-      }
-      a:hover {
-        color: hotpink;
+        color: purple;
       }
       a:active {
-        color: blue;
+        color: red;
       }
     </style>
   </head>
@@ -87,26 +118,26 @@
             <tr>
               <td>
                 <img
+                  class="img1"
                   src="./img/s1.jpg"
                   width="300"
                   alt="Tiramisu_Photo1"
-                  style="border: 2px solid black"
                 />
               </td>
               <td>
                 <img
+                  class="img2"
                   src="./img/s2.jpg"
                   width="300"
                   alt="Tiramisu_Photo2"
-                  style="border: 2px solid black"
                 />
               </td>
               <td>
                 <img
+                  class="img3"
                   src="./img/s3.jpg"
                   width="300"
                   alt="Tiramisu_Photo3"
-                  style="border: 2px solid black"
                 />
               </td>
             </tr>
@@ -136,26 +167,30 @@
                   indulgent chocolate soufflé cake.
                 </p>
                 <div class="ingredients">
-                  <h3>Ingredients</h3>
-                  <ul>
-                    <li>
-                      1 and 1/4 cups (300ml) very strongly prepared espresso,
-                      warm or room temperature
-                    </li>
-                    <li>6 Tablespoons (90ml) Grand Marnier*</li>
-                    <li>40-45 ladyfingers*</li>
-                    <li>
-                      16 ounces (about 2 cups; 450g) mascarpone, cold or at room
-                      temperature
-                    </li>
-                    <li>1/4 cup (60ml) dark rum</li>
-                    <li>4 large pasteurized eggs, separated*</li>
-                    <li>1/2 cup (100g) granulated sugar, divided*</li>
-                    <li>2 cups (480ml) heavy cream or heavy whipping cream</li>
-                    <li>1/2 teaspoon pure vanilla extract</li>
-                    <li>1/8 teaspoon salt</li>
-                    <li>unsweetened natural or dutch-process cocoa powder</li>
-                  </ul>
+                  <div class="inner-ingredients">
+                    <h3 style="margin-top: 0">Ingredients</h3>
+                    <ul style="margin: 0">
+                      <li>
+                        1 and 1/4 cups (300ml) very strongly prepared espresso,
+                        warm or room temperature
+                      </li>
+                      <li>6 Tablespoons (90ml) Grand Marnier*</li>
+                      <li>40-45 ladyfingers*</li>
+                      <li>
+                        16 ounces (about 2 cups; 450g) mascarpone, cold or at
+                        room temperature
+                      </li>
+                      <li>1/4 cup (60ml) dark rum</li>
+                      <li>4 large pasteurized eggs, separated*</li>
+                      <li>1/2 cup (100g) granulated sugar, divided*</li>
+                      <li>
+                        2 cups (480ml) heavy cream or heavy whipping cream
+                      </li>
+                      <li>1/2 teaspoon pure vanilla extract</li>
+                      <li>1/8 teaspoon salt</li>
+                      <li>unsweetened natural or dutch-process cocoa powder</li>
+                    </ul>
+                  </div>
                 </div>
                 <br />
                 <p style="color: rgb(137, 137, 137); text-align: center">
@@ -171,15 +206,16 @@
                   of inspiration to bakers and cooks all over the world.
                 </p>
                 <br />
-                <img
+                <!-- <img
                   class="img4"
                   src="./img/tiramisu.jpg"
                   width="700"
                   alt="Tiramisu_Photo4"
                   style="border: 2px dotted black"
-                />
-                <br /><br />
-                <h3>Common Tiramisu Questions - Answered</h3>
+                /> -->
+                <h3 style="text-align: center">
+                  Common Tiramisu Questions - Answered
+                </h3>
                 <div class="last-container">
                   <dl>
                     <dt>

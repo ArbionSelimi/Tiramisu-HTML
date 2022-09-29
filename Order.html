@@ -21,6 +21,13 @@
         padding-top: 100px;
         font-size: 20px;
       }
+      .inputs {
+        font-size: 18px;
+      }
+
+      .check {
+        transform: scale(1.5);
+      }
 
       .btn {
         font-size: 12px;
@@ -37,17 +44,15 @@
         color: black;
         margin-top: 20px;
       }
-      a:link {
-        color: red;
+      a:link,
+      a:hover {
+        color: blue;
       }
       a:visited {
-        color: green;
-      }
-      a:hover {
-        color: hotpink;
+        color: purple;
       }
       a:active {
-        color: blue;
+        color: red;
       }
     </style>
   </head>
@@ -65,6 +70,7 @@
           <td><label for="firstandlastname">First and Last Name:</label></td>
           <td>
             <input
+              class="inputs"
               type="text"
               id="firstandlastname"
               name="firstandlastname"
@@ -78,6 +84,7 @@
           <td><label for="address">Address:</label></td>
           <td>
             <input
+              class="inputs"
               type="text"
               id="address"
               name="address"
@@ -91,6 +98,7 @@
           <td><label for="email">Email:</label></td>
           <td>
             <input
+              class="inputs"
               type="email"
               id="email"
               name="email"
@@ -104,6 +112,7 @@
           <td><label for="tel">Mobile Number:</label></td>
           <td>
             <input
+              class="inputs"
               type="tel"
               id="tel"
               name="tel"
@@ -118,6 +127,7 @@
           <td><label>Extra ingredients:</label></td>
           <td>
             <input
+              class="check"
               type="checkbox"
               id="ingredients-cream"
               name="ingredients"
@@ -126,6 +136,7 @@
             <label for="ingredients-cream">Cream</label>
 
             <input
+              class="check"
               type="checkbox"
               id="ingredients-mascarpone"
               name="ingredients"
@@ -133,6 +144,7 @@
             />
             <label for="ingredients-mascarpone">Mascarpone</label>
             <input
+              class="check"
               type="checkbox"
               id="ingredients-chocolate"
               name="ingredients"
@@ -145,6 +157,7 @@
           <td><label>Size:</label></td>
           <td>
             <input
+              class="check"
               type="radio"
               id="size-small"
               name="size"
@@ -154,6 +167,7 @@
             <label for="size-small">Small</label>
 
             <input
+              class="check"
               type="radio"
               id="size-medium"
               name="size"
@@ -162,6 +176,7 @@
             />
             <label for="size-medium">Medium</label>
             <input
+              class="check"
               type="radio"
               id="size-large"
               name="size"
@@ -175,6 +190,7 @@
           <td><label for="number">Quantity:</label></td>
           <td>
             <input
+              class="inputs"
               type="number"
               id="Quantity"
               name="quantity"
